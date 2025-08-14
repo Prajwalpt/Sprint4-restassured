@@ -1,0 +1,9 @@
+{
+  "customerId": 1003,
+  "customerName": "Sam",
+  "customerMobile": "9897123432",
+  "customerEmail": "sam@email.com",
+  "customerAddress": "Mumbai",
+  "customerUsername": "sam",
+  "customerPassword": "sam"
+}

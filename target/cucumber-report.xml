@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="4.645" tests="6" skipped="0" failures="1" errors="0">
+<testcase classname="Authentication for OnlineVegStore APIs" name="Obtain bearer token" time="2.313">
+<system-out><![CDATA[
+Given I request an access token.............................................passed
+Then I should receive a valid bearer token..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Customer Service API" name="View customer list" time="0.502">
+<system-out><![CDATA[
+Given Customer service is available.........................................passed
+When I view customer list...................................................passed
+Then the response status should be 200......................................passed
+And the response body should not be empty...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Customer Service API" name="View customer by known id" time="0.317">
+<system-out><![CDATA[
+Given Customer service is available.........................................passed
+When I view customer by id "known.customerId1"..............................passed
+Then the response status should be 200......................................passed
+And the response body should not be empty...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Customer Service API" name="View customer by known mobile" time="0.313">
+<system-out><![CDATA[
+Given Customer service is available.........................................passed
+When I view customer by mobile "known.mobile1"..............................passed
+Then the response status should be 200......................................passed
+And the response body should not be empty...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Customer Service API" name="Add a new customer with default data" time="0.317">
+<system-out><![CDATA[
+Given Customer service is available.........................................passed
+When I add a new customer with default data.................................passed
+Then the response status should be 200......................................passed
+And the response body should not be empty...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Customer Service API" name="Delete customer by known id" time="0.686">
+<failure type="java.lang.AssertionError" message="expected [200] but found [405]">
+<![CDATA[java.lang.AssertionError: expected [200] but found [405]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at stepDefinitions.CommonSteps.the_response_status_should_be(CommonSteps.java:18)
+	at ✽.the response status should be 200(file:///C:/Users/H%20P/eclipse-workspace/Sprint4_rest/src/test/resources/features/Customer.feature:28)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Customer service is available.........................................passed
+When I delete customer by id "known.customerId2"............................passed
+Then the response status should be 200......................................failed
+And the response body should not be empty...................................skipped
+]]></system-out>
+</testcase>
+</testsuite>

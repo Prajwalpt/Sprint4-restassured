@@ -1,0 +1,10 @@
+<extentreports>
+    <configuration>
+        <theme>dark</theme>
+        <encoding>UTF-8</encoding>
+        <protocol>https</protocol>
+        <documentTitle>API Test Execution Report</documentTitle>
+        <reportName>Sprint 4 - RestAssured BDD Report</reportName>
+        <timeStampFormat>dd MMM yyyy HH:mm:ss</timeStampFormat>
+    </configuration>
+</extentreports>
