@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  tests:
+    build: .
+    container_name: restassured_tests
+    command: "mvn test"
+
